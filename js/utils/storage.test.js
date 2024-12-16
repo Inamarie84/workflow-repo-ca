@@ -3,12 +3,10 @@ import { saveUser, getUsername, clearStorage } from "./storage";
 
 describe("getUsername", () => {
   beforeEach(() => {
-    // Clear local storage before each test to ensure a clean state
     clearStorage();
   });
 
   afterEach(() => {
-    // Clear local storage after each test to ensure a clean state
     clearStorage();
   });
 
