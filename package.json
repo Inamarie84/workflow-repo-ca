@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "vitest",
+    "test:unit": "vitest",
+    "test:e2e": "npx playwright test --headed",
     "dev": "npx tailwindcss -i ./css/input.css -o ./css/style.css --watch",
     "prepare": "husky install",
     "start": "Live-server --port=5500"
