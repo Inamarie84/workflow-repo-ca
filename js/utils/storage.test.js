@@ -1,18 +1,14 @@
-import { describe, expect, it, beforeEach, afterEach } from "vitest";
-import { saveUser, getUsername, clearStorage } from "./storage";
+import { describe, expect, it, beforeEach } from "vitest";
+import { getUsername } from "./storage";
 
 describe("getUsername", () => {
   beforeEach(() => {
-    clearStorage();
-  });
-
-  afterEach(() => {
-    clearStorage();
+    localStorage.clear();
   });
 
   it("returns the name from the user object in storage", () => {
     const user = { name: "John Doe" };
-    saveUser(user);
+    localStorage.setItem("user", JSON.stringify(user));
 
     expect(getUsername()).toBe("John Doe");
   });

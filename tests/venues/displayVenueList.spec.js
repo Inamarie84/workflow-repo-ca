@@ -4,9 +4,9 @@ test.describe("Navigation", () => {
   test("should navigate to venue details from home page", async ({ page }) => {
     await page.goto("/");
 
-    await page.waitForSelector(".bg-cover");
+    await page.waitForSelector("#venue-container a");
 
-    await page.locator(".bg-cover").first().click();
+    await page.locator("#venue-container a").first().click();
 
     await expect(page.locator("h1")).toContainText("Venue details");
   });
