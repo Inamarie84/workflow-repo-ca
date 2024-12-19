@@ -16,6 +16,7 @@ This project demonstrates the implementation of a workflow setup for a JavaScrip
 
 1. Clone the repository:
    git clone https://github.com/Inamarie84/workflow-repo-ca/tree/workflow
+
    cd workflow-repo-ca
 
 2. Install dependencies:
